@@ -1,0 +1,12 @@
+<?php
+
+$form->prepare();
+
+?>
+<?= $this->form()->openTag($form); ?>
+<?= $this->formRow($form->get('username')); ?>
+<?=  $this->formRow($form->get('password')); ?>
+<?= $this->formElement($form->get('csrf')) ?>
+<?= $this->formElement($form->get('submit')) ?>
+
+<?= $this->form()->closeTag($form); ?>
